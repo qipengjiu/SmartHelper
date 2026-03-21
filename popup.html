@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>智能文本助手设置</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>智能文本助手</h1>
+      <p class="desc">可视化配置 Kimi API，无需手动改 config.js</p>
+
+      <label class="label" for="apiUrl">Kimi API URL</label>
+      <input id="apiUrl" class="input" type="text" placeholder="https://api.moonshot.cn/v1/chat/completions" />
+
+      <label class="label" for="apiKey">Kimi API Key</label>
+      <input id="apiKey" class="input" type="password" placeholder="请输入你的 API Key" />
+
+      <label class="label" for="model">模型名称</label>
+      <input id="model" class="input" type="text" placeholder="moonshot-v1-8k" />
+
+      <label class="label" for="timeout">超时时间（毫秒）</label>
+      <input id="timeout" class="input" type="number" min="1000" step="1000" placeholder="20000" />
+
+      <div class="actions">
+        <button id="saveBtn" class="btn primary">保存配置</button>
+        <button id="resetBtn" class="btn">恢复默认</button>
+      </div>
+
+      <p id="status" class="status">状态：未保存</p>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+  </html>
