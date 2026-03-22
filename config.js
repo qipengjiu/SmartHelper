@@ -7,7 +7,5 @@
  */
 const SMART_HELPER_CONFIG = {
   kimiApiUrl: "https://api.moonshot.cn/v1/chat/completions",
-  kimiApiKey: "请在这里填写你的Kimi_API_Key",
-  kimiModel: "moonshot-v1-8k",
-  requestTimeoutMs: 20000
+  kimiApiKey: "sk-xacC3VC6KgUGY6IslBSjgm49owUvm2nnGliJ2SjFT6QTaQr3"
 };
